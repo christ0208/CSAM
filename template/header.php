@@ -1,6 +1,6 @@
 <div class="header">
     <div class="left-side-header">
-        <div class="title">Computer Shop</div>
+        <div class="title" id="homepage-logo">Computer Shop</div>
     </div>
     <div class="center-side-header">
         <form action="" method="GET">

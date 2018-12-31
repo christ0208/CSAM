@@ -19,3 +19,6 @@ function logout(){
 $('#btn-login').click(renderLoginPage);
 $('#btn-register').click(renderRegisterPage);
 $('#btn-logout').click(logout);
+$('#homepage-logo').click(function(){
+    window.location.replace("index.php");
+})

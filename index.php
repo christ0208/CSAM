@@ -13,10 +13,25 @@
     <?php include 'template/header.php';?>
     <!-- main body -->
     <div class="main-body">
-        
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="pictures/slides-1.jpeg" style="width:100%; height: 600px;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="pictures/slides-2.jpeg" style="width:100%; height: 600px;">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="pictures/slides-3.jpeg" style="width:100%; height: 600px;">
+            </div>
+        </div>        
     </div>
     <!-- footer -->
     <?php include 'template/footer.php';?>
 </body>
 <script src="index.js"></script>
+<script src="slideshow.js"></script>
 </html>

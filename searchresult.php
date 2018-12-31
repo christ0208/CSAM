@@ -1,3 +1,11 @@
+<?php
+    require 'connect/connect.php';
+
+    if(!$connection){
+        
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,24 +18,14 @@
 </head>
 <body>
     <!-- header -->
-    <?php include 'template/header.php'; ?>
+    <?php include 'template/header.php';?>
     <!-- main body -->
     <div class="main-body">
-        <div>
-            Email
-            <input type="email" name="email" id="email">
-        </div>
-        <div>
-            Password
-            <input type="password" name="password" id="password">
-        </div>
-        <div>
-            <button id="btn-login">Log In</button>
-        </div>
+
     </div>
     <!-- footer -->
-    <?php include 'template/footer.php'; ?>
+    <?php include 'template/footer.php';?>
 </body>
 <script src="index.js"></script>
-<script src="login.js"></script>
+<script src="slideshow.js"></script>
 </html>
