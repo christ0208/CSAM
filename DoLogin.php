@@ -7,7 +7,7 @@ if(!$connection){
 }
 
 $email = $_POST["email"];
-$password = $_POST["password"];
+$password = base64_encode($_POST["password"]);
 
 $selected_role = '';
 $selected_email = '';

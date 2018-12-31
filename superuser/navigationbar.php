@@ -1,3 +1,7 @@
+<?php
+    require '../middleware/adminlogin.php';
+?>
+
 <div class="nav-side">
     <div class="menu-item" id="btn-manage-user">
         Manage User

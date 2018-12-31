@@ -8,7 +8,7 @@ if(!$connection){
 
 $role = $_POST['role'];
 $email = $_POST['email'];
-$password = $_POST['password'];
+$password = base64_encode($_POST['password']);
 $name = $_POST['name'];
 $address = $_POST['address'];
 $dob = $_POST['dob'];

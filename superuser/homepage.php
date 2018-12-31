@@ -1,7 +1,3 @@
-<?php
-    require '../middleware/adminlogin.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +17,7 @@
                     Welcome, <?php echo $_SESSION["name"]; ?>!
                 </div>
                 <div class="flag">
-                    FLAG{sqli_d4ng3rous_8bca2}
+                    <?php if($_SESSION["role"] == 'e586b774-e4b5-429c-8f37-512fe7cb936e') echo 'FLAG{sqli_d4ng3rous_8bca2}'; ?>
                 </div>
             </div>
         </div>
