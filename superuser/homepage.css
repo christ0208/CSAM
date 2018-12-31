@@ -55,13 +55,13 @@
     left: 80%;
 }
 
-.list-user, .list-category{
+.list-user, .list-category, .list-product{
     width: 95%;
     height: 40vh;
     border: 1px solid black;
     overflow-y: scroll;
 }
 
-.table-list-user{
+.table-list-user, .table-list-category, .table-list-product{
     width: 100%;
 }

@@ -26,7 +26,7 @@
             <?php include 'navigationbar.php';?>
             <div class="body-side">
                 <div class="list-category">
-                    <table border="1" class="table-list-user">
+                    <table border="1" class="table-list-category">
                         <tr>
                             <th>Name</th>
                             <th>Action</th>
@@ -54,7 +54,7 @@
                             <input type="text" name="name" id="name">
                         </div>
                     </div>
-                    <div class="btn-form-user">
+                    <div class="btn-form-category">
                         <button class="btn-allow" id="btn-add-category">Add</button>
                         <button class="btn-warning" id="btn-update-category">Update</button>
                         <button class="btn-danger" id="btn-delete-category">Delete</button>
