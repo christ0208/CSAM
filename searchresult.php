@@ -2,8 +2,15 @@
     require 'connect/connect.php';
 
     if(!$connection){
-        
+        die('Connect error: '. $connection->connect_error);
     }
+
+    $search = $_GET["search"];
+
+    // Injection => asd') OR 1=1#
+    $query = "SELECT p.name ProductName, c.name CategoryName FROM products p, categories c WHERE p.category_id = c.id AND (p.name LIKE '%$search%' OR c.name LIKE '%$search%')";
+    
+    $result = $connection->query($query);
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +28,18 @@
     <?php include 'template/header.php';?>
     <!-- main body -->
     <div class="main-body">
-
+        <div class="search-results">
+            <?php 
+                if($result->num_rows > 0){
+                    while($row = $result->fetch_assoc()){
+                        echo '<div><div class="product-name">'.$row["ProductName"].'</div><div class="category-name">Category: '.$row["CategoryName"].'</div></div>';
+                    }
+                }
+                else{
+                    echo 'No results';
+                }
+            ?>
+        </div>
     </div>
     <!-- footer -->
     <?php include 'template/footer.php';?>

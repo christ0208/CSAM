@@ -21,4 +21,4 @@ $('#btn-register').click(renderRegisterPage);
 $('#btn-logout').click(logout);
 $('#homepage-logo').click(function(){
     window.location.replace("index.php");
-})
+});

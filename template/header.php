@@ -3,8 +3,8 @@
         <div class="title" id="homepage-logo">Computer Shop</div>
     </div>
     <div class="center-side-header">
-        <form action="" method="GET">
-            <input type="text" name="search" class="search-text-header">
+        <form action="searchresult.php" method="GET">
+            <input type="text" name="search" class="search-text-header" id="search">
         </form>
     </div>
     <div class="right-side-header">

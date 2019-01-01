@@ -14,7 +14,6 @@
     <!-- main body -->
     <div class="main-body">
         <div class="slideshow-container">
-
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
                 <img src="pictures/slides-1.jpeg" style="width:100%; height: 600px;">
