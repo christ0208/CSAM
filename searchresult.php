@@ -45,5 +45,4 @@
     <?php include 'template/footer.php';?>
 </body>
 <script src="index.js"></script>
-<script src="slideshow.js"></script>
 </html>

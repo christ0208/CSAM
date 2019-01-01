@@ -26,6 +26,13 @@
             <div class="mySlides fade">
                 <img src="pictures/slides-3.jpeg" style="width:100%; height: 600px;">
             </div>
+        </div>
+        <div class="feedback-slot">
+            Have a feedback? Please let us know
+            <br>
+            <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+            <br>
+            <button id="btn-feedback">Send Feedback</button>
         </div>        
     </div>
     <!-- footer -->
