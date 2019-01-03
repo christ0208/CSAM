@@ -29,7 +29,7 @@
     <title>Computer Store</title>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="ProfilePage.css">
-    <script src="jslib/jquery-3.3.1.js"></script>
+    <script src="../jslib/jquery-3.3.1.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -60,7 +60,7 @@
                     <?php 
                         echo $row_user["name"];
                     ?>
-                    <button>Edit Profile</button>
+                    <button id="edit-profile">Edit Profile</button>
                 </div>
             </div>
             <div class="body-profile-page">
@@ -96,5 +96,5 @@
         </div>
     </div>
 </body>
-<script src="../index.js"></script>
+<script src="ProfilePage.js"></script>
 </html>
