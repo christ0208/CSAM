@@ -33,6 +33,20 @@
             <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
             <br>
             <button id="btn-feedback">Send Feedback</button>
+        </div>
+        <div class="additional-info">
+            <div class="info-item">
+                <form action="OtherPage.php" method="post">
+                    <input type="hidden" name="page" value="About.php">
+                    <input type="submit" value="About Us">
+                </form>
+            </div>
+            <div class="info-item">
+                <form action="OtherPage.php" method="post">
+                    <input type="hidden" name="page" value="ContactUs.php">
+                    <input type="submit" value="Contact Us">
+                </form>
+            </div>
         </div>        
     </div>
     <!-- footer -->

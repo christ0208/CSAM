@@ -1,3 +1,21 @@
+<?php
+    require '../middleware/memberlogin.php';
+?>
+
+<?php
+    require '../connect/connect.php';
+
+    session_start();
+    $query = 'SELECT * FROM users WHERE id="'.$_SESSION["id"].'"';
+
+    $result = $connection->query($query);
+    $row = $result->fetch_assoc();
+
+    $query = 'SELECT * FROM profile_images WHERE user_id="'.$_SESSION["id"].'"';
+    $result_photo = $connection->query($query);
+    $row_photo = $result_photo->fetch_assoc();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,17 +32,19 @@
     <!-- main body -->
     <div class="main-body">
         <div class="form-profile">
-            <div>
-                Name:
-                <input type="text" name="name" id="name">
-            </div>
-            <div>
-                Photo:
-                <input type="file" name="photo" id="photo">
-            </div>
-            <div>
-                <button id="btn-update">Update</button>
-            </div>
+            <form action="DoUpdateUser.php" method="post" enctype="multipart/form-data">
+                <div>
+                    Name:
+                    <input type="text" name="name" id="name" value="<?= $row["name"]?>">
+                </div>
+                <div>
+                    Photo:
+                    <input type="file" name="photo" id="photo" value="<?= $row_photo["location"]?>">
+                </div>
+                <div>
+                    <input type="submit" value="Update" id="btn-update">
+                </div>
+            </form>
         </div>
     </div>
     <!-- footer -->
