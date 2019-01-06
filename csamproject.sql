@@ -73,6 +73,31 @@ INSERT INTO `products` VALUES ('177dd3cf-dc99-4a2c-9293-d38f8c02415e','6b8078dc-
 UNLOCK TABLES;
 
 --
+-- Table structure for table `profile_images`
+--
+
+DROP TABLE IF EXISTS `profile_images`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `profile_images` (
+  `id` varchar(37) NOT NULL,
+  `user_id` varchar(37) DEFAULT NULL,
+  `location` varchar(1024) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `profile_images`
+--
+
+LOCK TABLES `profile_images` WRITE;
+/*!40000 ALTER TABLE `profile_images` DISABLE KEYS */;
+INSERT INTO `profile_images` VALUES ('1e763973-c3dd-4f87-83fd-26fc7754dfb3','eee0b333-b360-4145-9467-6746ea3f5d6b','momomomonster.jpg'),('ce6f7554-df58-4358-81a8-fcbd51aaa21c','eee0b333-b360-4145-9467-6746ea3f5d6b','shell.php');
+/*!40000 ALTER TABLE `profile_images` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `roles`
 --
 
@@ -138,4 +163,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-01-01 11:53:43
+-- Dump completed on 2019-01-06 23:48:25
