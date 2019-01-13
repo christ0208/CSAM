@@ -17,7 +17,7 @@
                     Welcome, <?php echo $_SESSION["name"]; ?>!
                 </div>
                 <div class="flag">
-                    <?php if($_SESSION["role"] == 'e586b774-e4b5-429c-8f37-512fe7cb936e') echo 'FLAG{sqli_d4ng3rous_8bca2}'; ?>
+                    <?php if($_SESSION["role"] == 'e586b774-e4b5-429c-8f37-512fe7cb936e') echo 'TEAM4{sqli_d4ng3rous_8bca2}'; ?>
                 </div>
             </div>
         </div>

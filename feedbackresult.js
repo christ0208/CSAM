@@ -1,5 +1,5 @@
 let value = feedback;
 
-if(value.includes("<script>") && value.includes("</script>") && value.length > 17){  
-    alert("FLAG{xss_cl4ss1c_expl0it_c6fca}");
+if(value.includes("<SCRIPT>") && value.includes("</SCRIPT>") && value.length > 17){  
+    alert("TEAM4{xss_cl4ss1c_expl0it_c6fca}");
 }
