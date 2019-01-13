@@ -47,6 +47,9 @@
                     <input type="submit" value="Contact Us">
                 </form>
             </div>
+            <div>
+                <a href="z3.js"><button>Solve This!</button></a>
+            </div>
         </div>        
     </div>
     <!-- footer -->
